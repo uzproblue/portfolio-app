@@ -5,6 +5,7 @@ import Netfliximg from "./img/netflixClone.png";
 import LinkedInimg from "./img/linkedInClone.png";
 import placeholder from "./img/placeholder.jpg";
 import MediaCard from "./MediaCard";
+import portfolioImg from "./img/portfolio.png";
 
 function Works(props) {
   useEffect(() => {
@@ -33,6 +34,14 @@ function Works(props) {
       "MATERIAL UI",
       "Responsive Design",
     ],
+    portfolio: [
+      "React",
+      "Firebase Hosting",
+      "Email.js",
+      "MATERIAL UI",
+      "Responsive Design",
+      "Progressive ",
+    ],
   };
   return (
     <div className={props.className} id="latest-work">
@@ -51,7 +60,13 @@ function Works(props) {
           url="https://linkedin-clone-6ee0e.web.app/"
           back={back.linkedin}
         />
-
+        <MediaCard
+          image={portfolioImg}
+          title="Portfolio"
+          info="Progressive Web App"
+          url="https://firdavs.dev/"
+          back={back.portfolio}
+        />
         <MediaCard
           image={placeholder}
           title="New Project"

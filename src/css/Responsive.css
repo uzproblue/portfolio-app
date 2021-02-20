@@ -327,6 +327,7 @@
   .works_container {
     overflow-x: scroll;
     margin-bottom: 505px;
+    padding: 0px;
   }
 
   .about_section {

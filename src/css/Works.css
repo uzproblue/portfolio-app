@@ -1,9 +1,11 @@
 #latest-work {
   min-height: 100vh;
+  max-height: 100vh;
+  height: 100vw;
   width: 100vw;
   padding-right: 55px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   overflow-y: scroll;
@@ -21,6 +23,7 @@
   justify-content: space-evenly;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding: 100px;
 }
 .slider {
   display: flex;
