@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+.bar {
+  margin: 10px;
+  max-width: 200px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #e2e0db;
+  border-radius: 7px;
+  background: #ffffff;
+}
+.bar__info {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+}
+.bar__info > img {
+  height: 35px;
+  padding: 5px;
+}
+.bar__info > h2 {
+  font-family: "Hammersmith One", sans-serif;
+  color: #2c2828;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+.App {
+  max-width: 100vw;
+  max-height: 100vh;
+  perspective: 500px;
+  width: 100vw;
+  height: fit-content;
+  transition: 0.5s;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  background: rgb(66 62 62);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.is_open {
+  visibility: visible;
+  transform: rotateY(-11deg) scale(0.69) translateX(90px);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#about {
+  transition-delay: 5s;
+  transition: 0.5s;
+}
+#tools {
+  transition: 0.5s;
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  animation: load8 2s infinite cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load-cont {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: #2c2828;
+  visibility: visible;
+}
+.load-cont-hide {
+  visibility: hidden;
+}

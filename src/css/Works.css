@@ -1,0 +1,30 @@
+#latest-work {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vw;
+  width: 100vw;
+  padding-right: 55px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  background: linear-gradient(
+    0deg,
+    rgba(44, 40, 40, 1) 20%,
+    rgba(91, 156, 169, 1) 100%
+  );
+  transition: 0.5s;
+}
+.works_container {
+  display: flex;
+  width: 99vw;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+.slider {
+  display: flex;
+}
